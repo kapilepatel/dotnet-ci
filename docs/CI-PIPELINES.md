@@ -4,7 +4,7 @@ This document details the new pipeline workflow available on some .NET CI Jenkin
 
 # Overview
 
-.NET CI uses Jenkins to enable CI for OSS projects in .NET Core (and a few others).  Traditionally, we have primarily used Jenkins 'freestyle' jobs to do most of the work.  These jobs are fairly ridgid in their workflow, made up of several predefined phases.  Their entire workflow is 'statically' configured in Jenkins by the Job DSL plugin and a commit to the definition script (typically called netci.groovy) is required to update that workflow.
+.NET CI uses Jenkins to enable CI for OSS projects in .NET Core (and a few others).  Traditionally, we have primarily used Jenkins 'freestyle' jobs to do most of the work.  These jobs are fairly rigid in their workflow, made up of several predefined phases.  Their entire workflow is 'statically' configured in Jenkins by the Job DSL plugin and a commit to the definition script (typically called netci.groovy) is required to update that workflow.
 
 While useful, these freestyle jobs have a number of drawbacks:
 * It's not possible to change the workflow of the job in a PR.
